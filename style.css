@@ -121,3 +121,7 @@ section{
     background-color:white;
     margin-top: 2vmin;
 }
+.link_style{
+    text-decoration: none;
+    color: black;
+}
