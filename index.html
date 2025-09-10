@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoTech</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="style2.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="frontend/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="frontend/favicon_io/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="frontend/favicon_io/apple-touch-icon.png">
+   
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#008080">
+    <meta name="description" content="Environmental Education Platform">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+</head>
+<body>
+
+    <nav id = "nav_bar">
+        <div class="hamburger" onclick="toggleMenu()">
+            <img id="logo" src="frontend/favicon_io/android-chrome-512x512.png" alt="EcoTech Logo">
+        </div>
+        <ul class="nav_links" id="navLinks">
+            <button class="btn-login" onclick="openLoginModal()">Login</button>
+            <button class="btn-signup" onclick="openSignupModal()">Sign Up</button>
+        </ul>
+        <div class="nav_btn">Home</div>
+        <div class="nav_btn">About</div>
+        <div class="nav_btn">contact</div>
+    </nav>
+
+    <div class="main">
+        <div class="sub_main first">
+            <div class="main-image-container">
+                <img src="frontend/clg.jpeg" alt="Educational Image" class="main-responsive-image">
+            </div>
+        </div>
+        <div class="sub_main second">
+            <div class="first_sec">
+            <div class="activity">
+                <div class="progress-circle">
+                        <svg class="progress-ring" width="120" height="120">
+                            <circle class="progress-ring__circle progress-ring__background"/>
+                            <circle class="progress-ring__circle progress-ring__progress progress-75" 
+                            stroke-dashoffset="326.73" data-percentage="75" />
+                        </svg>
+                        <div class="progress-text">0%</div>
+                    </div>
+                </div>
+            <div class="activity">
+                  <div class="progress-circle">
+                        <svg class="progress-ring" width="120" height="120">
+                            <circle class="progress-ring__circle progress-ring__background" />
+                            <circle class="progress-ring__circle progress-ring__progress progress-38" 
+                                    stroke-dashoffset="326.73" data-percentage="38" />
+                        </svg>
+                        <div class="progress-text">0%</div>
+                    </div>
+            </div>
+
+            </div>
+            <div class="first_sec">
+
+            <div class="activity">
+                    <div class="progress-circle">
+                        <svg class="progress-ring" width="120" height="120">
+                            <circle class="progress-ring__circle progress-ring__background" />
+                            <circle class="progress-ring__circle progress-ring__progress progress-96" 
+                                    stroke-dashoffset="326.73" data-percentage="96" />
+                        </svg>
+                        <div class="progress-text">0%</div>
+                    </div>
+            </div>
+            
+            <div class="activity">
+                <div class="progress-circle">
+                        <svg class="progress-ring" width="120" height="120">
+                            <circle class="progress-ring__circle progress-ring__background" />
+                            <circle class="progress-ring__circle progress-ring__progress progress-91" 
+                                    stroke-dashoffset="326.73" data-percentage="91" />
+                        </svg>
+                        <div class="progress-text">0%</div>
+                    </div>
+            </div>
+            </div>
+        </div>
+    </div><br>
+    <section>
+    <div class="section_row">
+
+        <div class="data">
+           <h5 class="section-title">Primary School Standard</h5>
+           <a href="frontend/primary/primary.html" class="image-link">
+               <img src="frontend/e1.png" alt="Primary School Image" class="responsive-image">
+           </a>
+        </div>
+        
+        <div class="data">
+           <h5 class="section-title">Middle School Standard</h5>
+           <a href="frontend/middle/middle.html" class="image-link">
+               <img src="frontend/e3.png" alt="Middle School Image" class="responsive-image">
+           </a>
+        </div>
+    </div>
+    <div class="section_row">
+        <div class="data">
+            <h5 class="section-title">Secondary School Standard</h5>
+           <a href="frontend/secondary/secondary.html" class="image-link">
+               <img src="frontend/e2.jpeg" alt="Secondary Image" class="responsive-image">
+           </a>
+        </div>
+        <div class="data">
+            <h5 class="section-title">Higher School Standard</h5>
+           <a href="frontend/high/high.html" class="image-link">
+               <img src="frontend/e4.png" alt="Higher School Image" class="responsive-image">
+           </a>
+        </div>
+    </div>
+    <div class="section_row">
+        <div class="data">
+            <h5 class="section-title">University Standard</h5>
+           <a href="frontend/uni/uni.html" class="image-link">
+               <img src="frontend/uni.png" alt="Middle School Image" class="responsive-image">
+           </a>
+        </div>
+        <div class="data">
+            <h5 class="section-title">NGO's</h5>
+           <a href="frontend/NGO/index.html" class="image-link">
+               <img src="frontend/ngo.png" alt="Middle School Image" class="responsive-image">
+           </a>
+        </div>
+    </div>
+
+    <div class="section_row">
+        <div class="data">
+            <h5 class="section-title">Teacher's Hub</h5>
+           <a href="frontend/teacher_hub/index.html" class="image-link">
+               <img src="frontend/teachers.png" alt="Middle School Image" class="responsive-image">
+           </a>
+        </div>
+        <div class="data">
+            <h5 class="section-title">Friend's Hub</h5>
+           <a href="frontend/friends/index.html" class="image-link">
+               <img src="frontend/friends.png" alt="Middle School Image" class="responsive-image">
+           </a>
+        </div>
+    </div>
+
+    </section>
+
+    <div class="feedback">
+        <a href="frontend/feedback/index.html" class="from">Feedback</a>
+    </div>
+
+    <footer style="color:black; background-color: white; padding:40px 20px; text-align:center; font-family: 'Segoe UI', sans-serif;">
+        <div style="max-width:1100px; margin:auto;">
+            <b><p>Created with ❤️ for web development enthusiasts</p></b>
+            <!-- Website Mission -->
+            <p style="font-size: 15px; line-height:1.7; max-width:800px; margin:auto; opacity:0.9;">
+                Our mission is to make environmental education engaging, interactive, and practical. 
+                Through gamified learning, quizzes, challenges, and real-world eco-tasks, 
+                we inspire students to build sustainable habits and become changemakers for a greener tomorrow. 
+                Together, we align with <b>SDG goals</b> and <b>NEP 2020</b> to empower India's youth in 
+                protecting the environment.
+            </p>
+            <br>
+            
+            <!-- Social Links Container -->
+            <div style="text-align: left; max-width: 200px; margin: 0 auto 0 0;">
+                <h3 style="font-size:16px; margin-bottom:10px; text-align: left;">Connect With Us</h3>
+
+                <div style="margin-bottom: 8px;">
+                    <a href="#" class="social_footer_link" style="color:#000000; text-decoration:none; display: flex; align-items: center;">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" class="social-icon" style="margin-right: 8px;">
+                        Facebook
+                    </a>
+                </div>
+
+                <div style="margin-bottom: 8px;">
+                    <a href="#" class="social_footer_link" style="color:#000000; text-decoration:none; display: flex; align-items: center;">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg" alt="Twitter" class="social-icon"  style="margin-right: 8px;">
+                        Twitter
+                    </a>
+                </div>
+
+                <div style="margin-bottom: 8px;">
+                    <a href="#" class="social_footer_link" style="color:#000000; text-decoration:none; display: flex; align-items: center;">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="social-icon"  style="margin-right: 8px;">
+                        Instagram
+                    </a>
+                </div>
+
+                <div style="margin-bottom: 8px;">
+                    <a href="#" class="social_footer_link" style="color:#000000; text-decoration:none; display: flex; align-items: center;">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" class="social-icon" style="margin-right: 8px;">
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+
+            <!-- Bottom Line -->
+            <p style="margin-top:20px; font-size:13px; opacity:0.7;">
+                © 2025 EcoTech Platform | Developed for Smart India Hackathon 🌱 | 
+                Empowering Students for a Sustainable Future
+            </p>
+        </div>
+    </footer>
+
+    <script src="indexedit/script.js"></script>
+
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeLoginModal()">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Email:</label>
+                    <input type="email" id="loginEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password:</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+                <button type="submit" class="btn-submit">Login</button>
+            </form>
+            <div class="divider">
+                <span>or</span>
+            </div>
+            <button class="btn-google" onclick="loginWithGoogle()">
+                Continue with Google
+            </button>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeSignupModal()">&times;</span>
+            <h2>Sign Up</h2>
+            <form id="signupForm">
+                <div class="form-group">
+                    <label for="signupName">Name:</label>
+                    <input type="text" id="signupName" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupEmail">Email:</label>
+                    <input type="email" id="signupEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupPassword">Password:</label>
+                    <input type="password" id="signupPassword" required>
+                </div>
+                <button type="submit" class="btn-submit">Sign Up</button>
+            </form>
+            <div class="divider">
+                <span>or</span>
+            </div>
+            <button class="btn-google" onclick="loginWithGoogle()">
+                Sign up with Google
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
